@@ -2,6 +2,7 @@ package conta;
 
 import java.util.Scanner;
 
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -10,6 +11,14 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 		
 		int opcoes;
+		
+		Conta conta = new Conta(1, 123, 1, "Adriana", 10000.0f);
+		
+		conta.visualizar();
+		conta.sacar(12000.0f);
+		conta.visualizar();
+		conta.depositar(5000.0f);
+		conta.visualizar();
 		
 		while(true){
 			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND + "************************************");
