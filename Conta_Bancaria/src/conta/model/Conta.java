@@ -72,6 +72,7 @@ public class Conta {
 	}
 	
 	public void visualizar() {
+		
 		String tipo = "";
 		
 		switch(this.tipo) {
