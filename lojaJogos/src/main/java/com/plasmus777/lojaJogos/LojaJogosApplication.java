@@ -1,13 +1,13 @@
-package com.plasmus777.lojaGames;
+package com.plasmus777.lojaJogos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LojaGamesApplication {
+public class LojaJogosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LojaGamesApplication.class, args);
+		SpringApplication.run(LojaJogosApplication.class, args);
 	}
 
 }
