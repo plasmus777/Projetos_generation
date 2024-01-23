@@ -25,13 +25,12 @@ public class BasicSecurityConfig {
 
     @Autowired
     private JwtAuthFilter authFilter;
-
+    
     @Bean
     UserDetailsService userDetailsService() {
-
         return new UserDetailsServiceImpl();
     }
-
+    
     @Bean
     PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
